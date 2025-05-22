@@ -34,26 +34,11 @@
 # Functions Creation :
     * from the command pallete search Azure Function of just hit f1, select azure function: new project
     * create a new function project. select the eventhub you have created, chose the prefered acess policy - send/manage, choose the eventhub name 
-    * write your functions in the project
+    * write your functions in the project in your preferred language
     * start up the function to see how they work using "funct start" - to check the pipeline
-    * it is successful deploy using the vscode command pallete to azure function: deploy to azure
-    * go to azure portal to check your functions.
-
-# Event Grid Trigger Subscription for the blob storage :
-    * go to the blob storage created earlier
-    * go  to event, create an event subscription
-    * fill and select the endpoint as azure function, select the configure endpoint. it should pick your eventgrid trigger
-    * comfirm selection and create the subscription
-
-# Moment of Truth - Test the pipeline
-    * go to the input container and upload your file or connection to your source in input
-    * check the output in the output to see the result of the setiments.
-    * You can checks log, applicatioin insight, to check your performance
-
-# Result Consumption
-    *  integrate the output to power bi for real time dashboard, streamlit or other use cases
-
-
+    * it is successful deploy using the vscode command pallete to azure function: deploy to azure, 
+    * go to azure portal to check your functions app. you should see your function in overview pane. 
+    * if they are not their Do the next step below and refresh. i.e had the enviroment variable to the application setting  and refresh
 
 # Hosting Environment Variable on Azure Function App in Enviroment variable in app settings.
 
@@ -82,7 +67,21 @@ __Note__:
 ```
 before running the script.
 * This will automatically sync all your local environment variables to your Azure Function App’s Application settings.
+* Refresh and you should the functions you created in the overview pane
+
+# Event Grid Trigger Subscription for the blob storage :
+    * go to the blob storage created earlier
+    * go  to event, create an event subscription
+    * fill and select the endpoint as azure function, select the configure endpoint. it should pick your eventgrid trigger
+    * comfirm selection and create the subscription
+
+# Moment of Truth - Test the pipeline
+    * go to the input container and upload your file or connection to your source in input
+    * check the output in the output to see the result of the setiments.
+    * You can checks log, applicatioin insight, to check your performance
+
+# Result Consumption
+    *  integrate the output to power bi for real time dashboard, streamlit or other use cases
 
 
-# Add your functions and triggers Scripts in your prefered language - python.
-    * 
+
