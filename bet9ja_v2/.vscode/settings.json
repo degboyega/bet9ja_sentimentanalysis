@@ -1,10 +1,9 @@
 {
-    "azureFunctions.deploySubpath": "bet9ja_v2",
+    "azureFunctions.deploySubpath": ".",
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.pythonVenv": ".venv",
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.projectLanguageModel": 2,
-    "azureFunctions.projectSubpath": "bet9ja_v2"
+    "azureFunctions.projectLanguageModel": 2
 }
